@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+html,
+body{
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+
+}
+.sub-title{
+    color:#787777;
+    font-weight: 400;
+    display: inline-block;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.title-holder{
+    padding-bottom:30px;
+    margin-bottom:30px;
+    border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.section-title{
+    position: absolute;
+    left: 0;
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 1;
+    max-width: 100%;
+    text-transform:uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-text-stroke: 1px #000;
+    -webkit-user-select: none;
+    bottom:-50px;
+    z-index: 1;
+}
+
+.simple-title{
+    font-weight: 700;
+    font-size: 30px;
+    position: relative;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width:100%;
+    height:auto;
+    -webkit-transition: .3s ;
+    -moz-transition: .3s ;
+    transition: .3s;
+}
+
+.bg-theme{
+    background:#ebebeb;
+}
+.btn-primary{
+    background-color:#018eea;
+    border-color:#018eea;
+    color:#fff;
+    padding:13px 45px;
+    font-size:17px;
+    -webkit-transition: .3s duration timing-function delay;
+    -moz-transition: .3s duration timing-function delay;
+    transition: .3s duration timing-function delay;
+}
+
+.btn-primary:hover,
+.btn-primary:focus{
+    background-color:transparent;
+    border-color:#018eea;
+    color:#018eea;
+}
+
+.btn-secondary{
+    background-color:transparent;
+    border-color:#000;
+    color:#000;
+    padding:12px 40px;
+    font-size:17px;
+}
+.btn-secondary:hover,
+.btn-secondary:focus{
+    background:#000;
+    color:#fff;
+}
+
+.section-padding{
+    padding:100px 0;
+}
+
+.hero-banner #tsparticles{
+    position:absolute !important;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+
+}
+
+
+.hero-banner{
+    background-image:url('./img/desk3.jpg');
+    background-size: cover;
+    position:relative;
+    background-repeat:no-repeat;
+    background-position: center;
+    
+}
+.hero-banner:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    background:#ffffffe3;
+}
+.stroke-text{
+    -webkit-text-stroke: 1px  #000;
+    color:transparent;
+}
+
+.hero-banner h1{
+    font-size:7em;
+    text-transform:uppercase;
+    font-weight:700;
+    line-height:1.1;
+}
+.hero-banner p{
+    font-size:17px;
+    margin-bottom:30px;
+}
+
+p{
+    font-size:16px;
+    font-weight:400;
+    line-height:1.7;
+    color:#787777;
+    margin-bottom:15px;
+}
+
+h1,h2,h3,h4{
+    line-height:1.2;
+    font-weight:600;
+    color:#000;
+    margin-bottom:15px;
+
+}
+
+.hero-inner{
+    max-width:700px;
+    padding-top:30px;
+    height:100vh;
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+}
+
+.about .content{
+    padding-left:50px;
+}
+
+.slider-talent .Item{
+    display:flex;
+    align-items:flex-start;
+}
+.slider-talent .Item p{
+    padding-right:30px;
+    font-size:15px;
+}
+.slider-talent .Item img{
+    width:50px;
+    margin-right:20px;
+}
+.slider-talent .Item h4{
+    font-size:20px;
+}
+
+.para-T{
+    -webkit-transition: 4s;
+    -moz-transition: 4s ;
+    transition: 4s;
+}
+.slider-talent.section-padding{
+        padding: 60px 0;
+}
+
+@media (max-width:768px){
+    nav.navbar{
+        background:#fff;
+    }
+    .hero-banner:before{
+        width:100%;
+
+    }
+    .slider-talent .Item p{
+        padding-right:10px;
+    }
+    .hero-inner{
+        align-items:center;
+    }
+
+    .hero-banner h1{
+    font-size:5em;
+  
+    }
+    .section-title{
+        font-size:50px;
+    }
+    .about .content{
+        padding-left:0;
+        margin-top:30px;
+    }
+    .section-padding{
+        padding:80px 0;
+    }
+    .slider-talent.section-padding{
+        padding: 0;
+    }
+
+
+
+    h1{
+        font-size:38px;
+        line-height:1.2;
+        font-weight:700;
+    }
+    h2{
+        font-size:35px;
+        font-weight:600;
+        
+        
+    }	
+
+    h3{
+        font-size:32px;
+        font-weight:600;
+        
+    }
+
+    h4{
+        font-size:30px;
+        
+    }
+    h5{
+        font-size:30px;
+        
+    }
+    h6{
+        font-size:25px;
+        
+    }
+    .navbar-collapse{
+        width:80%;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        font-size:40px;
+    }
+
+}
