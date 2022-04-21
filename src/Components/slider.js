@@ -14,7 +14,7 @@ export default class SimpleSlider extends Component {
       dots:false,
       arrows:false,
       infinite: true,
-      speed: 500,
+      speed: 800,
       slidesToShow: 3,
       slidesToScroll: 1,
        responsive: [
@@ -44,7 +44,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={webIco}/></span>
                <div className="inner">
                  <h4>Web Development</h4>
-                 <p>Building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. ..</p>
+                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
                </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={designIco}/></span>
                <div className="inner">
                  <h4>Creative Design</h4>
-                 <p>Building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. ..</p>
+                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
                </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={caseIco}/></span>
                <div className="inner">
                  <h4>Case Studies</h4>
-                 <p>Building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. ..</p>
+                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
                </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={planIco}/></span>
                <div className="inner">
                  <h4>Strategic Planning</h4>
-                 <p>Building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. ..</p>
+                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
                </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={brandIco}/></span>
                <div className="inner">
                  <h4>Brand Identity</h4>
-                 <p>Building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. ..</p>
+                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
                </div>
             </div>
           </div>
