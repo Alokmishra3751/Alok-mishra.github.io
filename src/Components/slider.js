@@ -44,7 +44,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={webIco}/></span>
                <div className="inner">
                  <h4>Web Development</h4>
-                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
+                 <p>Designing and construction of websites which meets the user expectations and their needs.</p>
                </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={designIco}/></span>
                <div className="inner">
                  <h4>Creative Design</h4>
-                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
+                 <p>Creation of visual compositions to solve problems and communicate ideas through typography, imagery, color and form.</p>
                </div>
             </div>
           </div>
@@ -61,8 +61,8 @@ export default class SimpleSlider extends Component {
             <div className="Item">
                <span class="icon"><img src={caseIco}/></span>
                <div className="inner">
-                 <h4>Case Studies</h4>
-                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
+                 <h4>R&D Case Studies</h4>
+                 <p>Case Study examining the product development of Products, including innovation and identifying consumer needs.</p>
                </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={planIco}/></span>
                <div className="inner">
                  <h4>Strategic Planning</h4>
-                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
+                 <p>Writing or developing the content, developing the information architecture, navigational aids, visual design of the site</p>
                </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default class SimpleSlider extends Component {
                <span class="icon"><img src={brandIco}/></span>
                <div className="inner">
                  <h4>Brand Identity</h4>
-                 <p>Building, creating, and maintaining of websites. Building Innovative Designs.</p>
+                 <p>visible elements of a brand, such as color, design, and logo, that identify and distinguish the brand in consumers' minds.</p>
                </div>
             </div>
           </div>

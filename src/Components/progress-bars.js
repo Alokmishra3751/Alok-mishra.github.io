@@ -1,31 +1,38 @@
 import * as React from 'react';
-import ReactDOM from 'react-dom';
-import Style from './portfolio.css';
-import VisibilitySensor from 'react-visibility-sensor';
+import  './portfolio.css';
+import SkillBar from 'react-skillbars';
 
+function Progress(){
+	const skills = [
+  { type: 'HTML5', level: 90 },
+  { type: 'CSS3', level: 85 },
+  { type: 'Javascript', level: 65 },
+  { type: 'Bootstrap', level: 80 },
+  { type: 'Tailwind', level: 85 },
+  { type: 'React', level: 55 },
+  { type: 'Node', level: 45 },
+  { type: 'Wordpress', level: 80 },
+  { type: 'Shopify', level: 80 },
 
-	const Progress = ({done}) => {
+];
+	const colors= {
+		bar: '#018eea',
+		title: {
+		text: '#fff',
+		background: '#fff'
+	},
 
-		const [style, setStyle] = React.useState({});
+	
 		
-		setTimeout(() => {
-			const newStyle = {
-				opacity: 1,
-				width: `${done}%`
-			}
-			
-			setStyle(newStyle);
-		}, 200);
+	};
+	
+	return(
+		<div className="progressBar">
+			<SkillBar skills={skills} colors={colors}/>
+		</div>
 		
-		return (
-			<div className="skill-bar">
-				<div className="progress">
-			<div className="progress-done" style={style}>
-					
-			</div>
-			</div>
-			
-			</div>
-		)
-	}
+	)
+
+}
+
 export default Progress;

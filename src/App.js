@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Circles} from  'react-loader-spinner';
+import {Rings} from  'react-loader-spinner';
 
 import Header from './Components/Header';
 import "slick-carousel/slick/slick.css"; 
@@ -25,7 +25,7 @@ function App() {
   }, []);
   
 
-  return isLoading?<Circles color="#00BFFF" height={80} width={80} css isLoading={isLoading}/>:(
+  return isLoading?<div className="Loader"><Rings color="#00BFFF" height={80} width={80} css isLoading={isLoading}/></div>:(
     <div className="App animate__animated animate__fadeIn">
       
       <Header/>

@@ -20,7 +20,14 @@ export default function Header() {
         <div>
             <nav className={colorChange ? 'navbar fixed-top   navbar-light colorChange' : 'navbar fixed-top  navbar-light'}>
   <div className="container">
-    <a className="navbar-brand" href="#"><img src={Logo} alt="logo"/></a>
+    <a className="navbar-brand logo" href="#"><img src={Logo}/></a>
+    <ul class="social inline-block">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        
+		</ul>
     <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -43,6 +50,7 @@ export default function Header() {
           <a className="nav-link" href="#">Contact</a>
         </li>
       </ul>
+      
       
     </div>
   </div>

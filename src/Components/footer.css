@@ -1,11 +1,6 @@
-.logo img{
-    width: 80px;
-    height: auto;
-    transition: 3s;
-}
 
 .footer{
-    background-color:#eee;
+    background-color:#fff;
     padding-top:60px;
     padding-bottom:0;
 }

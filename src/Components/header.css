@@ -1,16 +1,43 @@
 nav.navbar{
     z-index:999;
-    padding:0;
+    padding:10px 0;
     background:transparent;
     -webkit-transition: .4s;
     -moz-transition: .4s;
     transition: .4s;
     width:100%;
 }
+.navbar .social li{
+    display: inline-block;
+    list-style:none;
+
+}
+.navbar .social{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-bottom:0;
+    width:80%;
+}
+.navbar .social li a{
+    padding:5px 12px;
+    color:#000;
+    font-size:18px;
+    margin-left:10px;
+   
+}
+.logo img{
+    width: 80px;
+    height: auto;
+    transition: 3s;
+}
 
 .navbar.colorChange{
     background:#fff;
     box-shadow: 0 0 10px .1px rgba(0,0,0,0.2);
+}
+.navbar-toggler.collapsed{
+    width:auto !important;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -23,7 +50,7 @@ nav.navbar{
 
 .navbar-collapse.collapse:not(.show){
  display:flex;
- transform:translateX(-100%);
+ transform:translateX(-120%);
 }
 
 .navbar-collapse{
@@ -43,9 +70,9 @@ nav.navbar{
     justify-content:center;
     align-items:center;
 }
-.navbar-toggler{
+.navbar-light .navbar-toggler{
     position:relative;
-    border:1px solid #000;
+    border:0;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon{
@@ -72,6 +99,8 @@ nav.navbar{
     left:0;
   
 }
+
+
 
 
 .navbar-light .navbar-nav .nav-link:hover:before{
