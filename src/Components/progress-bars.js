@@ -18,8 +18,8 @@ function Progress(){
 	const colors= {
 		bar: '#018eea',
 		title: {
-		text: '#fff',
-		background: '#fff'
+		text: '#000',
+		background: '#eceff4'
 	},
 
 	
@@ -28,7 +28,7 @@ function Progress(){
 	
 	return(
 		<div className="progressBar">
-			<SkillBar skills={skills} colors={colors}/>
+			<SkillBar skills={skills} colors={colors} height={30}/>
 		</div>
 		
 	)

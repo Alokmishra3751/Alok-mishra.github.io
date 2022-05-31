@@ -2,9 +2,25 @@ import React ,{ useState } from 'react';
 import ReactDOM from 'react-dom';
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-import contactImg from './img/drone.jpg';
+import contactImg from './img/contact.jpg';
+import emailjs from 'emailjs-com';
+   
 
 const Contact = () => {
+    function sendEmail(e){
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_cjhoug3',
+            'template_bhuezg1',
+            e.target,
+            "bXKPCcDRcguwwewU6")
+            .then(res=>{
+                console.log(res);
+            }).catch(err=>
+                console.log(err));
+    }
+
    const[userData, setUserData] = useState({
     Name:"",
     Email:"",

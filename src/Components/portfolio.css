@@ -7,18 +7,16 @@ body{
 
 }
 .sub-title{
-    color:#000;
-    font-weight: 500;
+    font-weight: 600;
     display: inline-block;
-    font-size:18px;
-    padding-top: 10px;
-    font-family:'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-size:17px; 
     
 }
 button,
 .btn{
      font-weight:500;
-    font-family:'Montserrat', sans-serif;
+   
 }
 
 .img-wall{
@@ -37,6 +35,12 @@ button,
 .t-color{
     color:#018eea;
 }
+.gText{
+    background: linear-gradient(260.16deg, #1C99FE 9.94%, #7644FF 54.82%, #FD4766 95.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+}
 
 a{
     text-decoration:none;
@@ -51,42 +55,22 @@ a:focus{
 .title-holder{
     padding-bottom:30px;
     margin-bottom:30px;
+    text-align: center;
 }
 
 .title-holder p{
     max-width:700px;
+    margin:0 auto;
 }
 
 .about .title-holder{
     border-bottom:1px solid rgba(0,0,0,.2);
 }
 
-.section-title{
-    position: absolute;
-    left: 0;
-    color: transparent;
-    font-size: 120px;
-    font-family:'Montserrat', sans-serif;
-    font-weight:800;
-    opacity: .1;
-    line-height: 1;
-    max-width: 100%;
-    text-transform:uppercase;
-    display:none;
-    overflow: hidden;
-    white-space: nowrap;
-    -webkit-text-stroke: 1px #000;
-    -webkit-user-select: none;
-    bottom:-50px;
-    z-index: 1;
-}
-.simple-title.text-white .section-title{
-    -webkit-text-stroke:1px #fff;
-}
 
 .simple-title{
     
-    font-size: 35px;
+    font-size: 42px;
     position: relative;
     color: #000;
     font-weight:700;
@@ -95,9 +79,9 @@ a:focus{
 }
 p{
     font-size:16px;
-    font-weight:400;
+    font-weight:500;
     line-height:1.7;
-    color:#282828;
+    color:#777b83;
     margin-bottom:15px;
 }
 h5,h6{
@@ -107,8 +91,8 @@ h5,h6{
 }
 
 h1,h2,h3,h4{
-    font-family:'Montserrat', sans-serif;
-    text-transform:uppercase;
+    font-family: 'Poppins',sans-serif;
+    
     line-height:1.2;
     color:#000;
     font-weight:800;
@@ -126,10 +110,10 @@ img{
 }
 
 .bg-theme{
-    background:#018eea;
+    background-image:linear-gradient(250.16deg, #1C99FE 9.94%, #7644FF 40.82%, #FD4766 85.56%);
 }
-.bg-fade{
-    background:#f1f1f1;
+.gray-bg{
+    background:#eceff4;
 }
 ul{
     padding-left:0;
@@ -137,23 +121,27 @@ ul{
 
 
 .btn-primary{
-    background-color:#018eea;
-    border-color:#018eea;
+    background-image:linear-gradient(260.16deg, #1C99FE 9.94%, #7644FF 54.82%, #FD4766 95.56%);
+    border-color:transparent;
+    background-size: 200% 100%;
     color:#fff;
     padding:13px 45px;
-    border-radius:0;
+    border-radius:50px;
     font-size:17px;
-   
-    -webkit-transition: .3s duration timing-function delay;
-    -moz-transition: .3s duration timing-function delay;
-    transition: .3s duration timing-function delay;
+    background-color:transparent;
+    -webkit-transition: .3s ;
+    -moz-transition: .3s ;
+    transition: .3s ;
 }
 
 .btn-primary:hover,
 .btn-primary:focus{
+    background-position: 100% 50%;
+    color: #fff;
     background-color:transparent;
-    border-color:#018eea;
-    color:#018eea;
+    border-color:transparent;
+    text-decoration: none;
+
 }
 .btn-secondary.white{
     border-color:#fff;
@@ -186,7 +174,8 @@ ul{
     position:absolute !important;
     top:0;
     right:0;
-    width:80%;
+    z-index:0;
+    width:100%;
     height:100%;
     overflow:hidden;
     opacity:.3;
@@ -195,9 +184,11 @@ ul{
 
 
 .hero-banner{
-    background-image: url('./img/desk.jpg');
-    background-size:cover;
-    background-position:center;
+    background: rgb(233, 233, 233);  /* fallback for old browsers */
+    background-image:url('./img/main-hero.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:top right;
     position:relative;
     overflow:hidden;
 }
@@ -206,9 +197,9 @@ ul{
     position:absolute;
     top:0;
     left:0;
-    width:75%;
+    width:0;
     height:100%;
-    background-image:linear-gradient(90deg ,rgb(255 255 255 / 90%),#f5f5f5,transparent);
+    background-image:linear-gradient(90deg ,rgb(255 255 255 / 98%),#f5f5f5,rgb(255 255 255 / 50%));
 }
 @keyframes gradient {
 	0% {
@@ -244,17 +235,16 @@ ul{
 }
 
 .hero-banner h1{
-    font-size:6em;
-    text-transform:uppercase;
+    font-size:7em;
     line-height:1.1;   
     font-weight:800;
-    max-width:600px;
+   
    
 }
 .hero-banner h5{
-    font-size:20px;
+    font-size:25px;
     line-height:1.5;
-    font-weight:300;
+    font-weight:600;
       max-width:600px;
    
 }
@@ -262,26 +252,41 @@ ul{
 
 .hero-inner{
     width:100%;
-    padding:30px 0;
+    padding:170px 0 110px 0;
     margin:0 auto;
-    height:100vh;
     display:flex;
     position:relative;
+    align-items:flex-start;
+    text-align:left;
     flex-direction:column;
-    justify-content:center;
-  
+    justify-content:center; 
    
 }
-.hero-inner .btn-primary{
-    margin-right:20px;
+.hero-center{
+    display:flex;
+    position:relative;
+    width:450px;
+    height:470px;
+    flex-direction:column;
+    justify-content:center; 
+    align-items:flex-start;
 }
 
-.hero-wrap .hero-img{
+.aboutImg{
     position:relative;
-    background-color:#222;
-    width:400px;
-     overflow:hidden;
+    z-index:2;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    box-shadow:0 0 10px .1px rgba(0,0,0,.3);
+}
+ .hero-cover{
     
+    position: relative;
+    
+}
+.hero-inner .btn-primary{
+    padding:15px 60px;
 }
 
 
@@ -290,7 +295,9 @@ ul{
     overflow:hidden;
 }
 .about .content{
-    padding-left:30px;
+    max-width:800px;
+    margin:0 auto;
+    text-align: center;
 }
 .about .lang{
     margin-top:20px;
@@ -305,6 +312,13 @@ ul{
     font-size:16px;
     color:#3e3e3e;
     margin-bottom:0;
+}
+.slider-talent .Item{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
 }
 
 .slider-talent .Item img{
@@ -350,6 +364,9 @@ ul{
     font-weight:500;
     line-height: 1.4;
     margin-bottom: 30px;
+}
+.masonary .MuiMasonry-root{
+    margin:0 !important;
 }
 
 .masonary .item-wrapper .desc-wrap{
@@ -445,7 +462,12 @@ ul{
     z-index: -1;
 }
 .about-feature-left h3{
-    line-height: 50px;
+    line-height: 45px;
+    font-size:35px;
+    font-weight:700;
+}
+.section-padding.quote{
+    padding-top:0;
 }
 .quote .inner{
     max-width:500px;
@@ -470,7 +492,7 @@ ul{
 
 }
 .progressBar .skillbar{
-    background:#fff;
+    background:#eceff4;
     margin-bottom:20px;
 }
 .progressBar .skillbar-bar{
@@ -482,7 +504,7 @@ ul{
     border-radius:0;
 }
 .progressBar .skillbar-title span{
-    background:#000;
+    background:#eceff4;
 }
 .progressBar .skillbar-percent{
     color:#fff;
@@ -523,11 +545,10 @@ ul{
     height:100%;
     background:#fff;
     position:relative;
-    box-shadow:0 0 20px 0.1px rgb(0 0 0 / 10%);
+    box-shadow:0 0 20px 0.1px rgb(0 0 0 / 30%);
 
 }
 .contact-sec img{
-    filter:hue-rotate(170deg);
     position: absolute;
     left: 0;
     top: 0;
@@ -552,6 +573,9 @@ ul{
         align-items:center;
         text-align: center;
         
+    }
+    .hero-banner{
+        background-size:cover;
     }
    
     .hero-banner p{

@@ -16,7 +16,7 @@ import Style from './portfolio.css';
 export default function ImageMasonry() {
   return (
     <Box>
-      <Masonry columns={3} spacing={1}>
+      <Masonry columns={3} spacing={2}>
         {itemData.map((item) => (
           <div className="item-wrapper">
             <div className="desc-wrap">
@@ -62,24 +62,13 @@ const itemData = [
     desc:'Movie Streaming web app build with react js'
   },
   
-  {
-    img: '/img/expox-banner.png',
-    title: 'Expox - Multipurpose , Business & Portfolio',
-    url:'https://themeforest.net/item/expox-multipurpose-html5-template/24977900',
-    desc:'Expox  Template is a modern corporate template, designed for a variety of businesses &amp; web projects. It has almost every sections and feature that a service-based website would need.  '
-  },
    {
     img: '/img/grocery-store.png',
     title: 'FuudStuff - Grocery Shop react website',
     url:'https://www.templatemonsterpreview.com/demo/224215.html',
     
   },
-  {
-    img: './img/farmtopia-banner.png',
-    title: 'Farmtopia - E-Stores & Agriculture',
-    url:'http://slidesigma.com/themes/html/Farmtopia/',
-    desc:'Farmtopia  is a classic farm and shop based  template, designed for a variety of farm products &amp; online shops. It has almost every sections and feature that a farm-based website would need.'
-  },
+ 
   {
     img: './img/fire.png',
     title: 'Squad -  Safety Security Website',
@@ -87,12 +76,6 @@ const itemData = [
     
   },
   
-  {
-    img: './img/tcb.png',
-    title: 'thecreativesblock - Multimedia , Portfolio , Entertainment & Studio',
-    url:'http://thecreativesblock.in/',
-    desc:'The Creative’s Block embraces the art of digital cinema to amplify your message and establish valuable connections with your target audience.'
-  },
   {
     img: './img/AI.png',
     title: 'Roboto - AI and IT Startup Agency Template',
@@ -104,6 +87,27 @@ const itemData = [
     title: 'Greenchickchopindia - Food , E-store & E-shop',
     url:'https://greenchickchopindia.com/',
     desc:'Real, fresh, and hygienic meat and seafood available in Green Chick Chop stores or delivered at your doorsteps, along with the condiments.'
+  },
+
+  {
+    img: './img/tcb.png',
+    title: 'thecreativesblock - Multimedia , Portfolio , Entertainment & Studio',
+    url:'http://thecreativesblock.in/',
+    desc:'The Creative’s Block embraces the art of digital cinema to amplify your message and establish valuable connections with your target audience.'
+  },
+
+  {
+    img: './img/farmtopia-banner.png',
+    title: 'Farmtopia - E-Stores & Agriculture',
+    url:'http://slidesigma.com/themes/html/Farmtopia/',
+    desc:'Farmtopia  is a classic farm and shop based  template, designed for a variety of farm products &amp; online shops. It has almost every sections and feature that a farm-based website would need.'
+  },
+
+  {
+    img: '/img/expox-banner.png',
+    title: 'Expox - Multipurpose , Business & Portfolio',
+    url:'https://themeforest.net/item/expox-multipurpose-html5-template/24977900',
+    desc:'Expox  Template is a modern corporate template, designed for a variety of businesses &amp; web projects. It has almost every sections and feature that a service-based website would need.  '
   },
   
   {

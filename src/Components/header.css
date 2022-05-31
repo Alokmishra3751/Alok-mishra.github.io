@@ -27,7 +27,7 @@ nav.navbar{
    
 }
 .logo img{
-    width: 80px;
+    width: 60px;
     height: auto;
     transition: 3s;
 }
@@ -38,6 +38,7 @@ nav.navbar{
 }
 .navbar-toggler.collapsed{
     width:auto !important;
+   
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -73,11 +74,19 @@ nav.navbar{
 .navbar-light .navbar-toggler{
     position:relative;
     border:0;
+    border-radius: 5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#eceff4;
+}
+.navbar-light .navbar-toggler-icon{
+    background-size:22px 22px !important;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon{
     background-image: url('./img/icons/close.png');
-    background-size:22px 22px;
+    
     
 }
 
